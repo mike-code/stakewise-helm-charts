@@ -1,0 +1,16 @@
+name: github-pages
+
+on:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Publish Helm charts
+        uses: stefanprodan/helm-gh-pages@v1.7.0
+        with:
+          token: ${{ secrets.TOKEN }}

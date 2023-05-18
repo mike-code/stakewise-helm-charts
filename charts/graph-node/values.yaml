@@ -239,3 +239,5 @@ livenessProbe:
     path: /
     port: http
     scheme: HTTP
+
+initContainers: {}
