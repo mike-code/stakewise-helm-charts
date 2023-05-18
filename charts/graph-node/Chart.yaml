@@ -34,8 +34,8 @@ sources:
 dependencies:
   - name: common
     version: 1.x.x
-    repository: https://charts.stakewise.io/
+    repository: https://mike-code.github.io/stakewise-helm-charts/
   - name: ipfs
     version: 2.x.x
-    repository: https://charts.stakewise.io/
+    repository: https://mike-code.github.io/stakewise-helm-charts/
     condition: ipfs.enabled
