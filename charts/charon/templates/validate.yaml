@@ -1,3 +1,0 @@
-{{- if not .Values.charon.config.beaconNodeEndpoints }}
-{{- fail ".Values.charon.config.beaconNodeEndpoints is required" }}
-{{- end }}

@@ -1,6 +1,0 @@
-dependencies:
-- name: common
-  repository: https://charts.stakewise.io/
-  version: 1.0.0
-digest: sha256:240ef37303ced86ae2d060d674837717c50a97acc373fbfaf1b39b26e932baa4
-generated: "2023-01-09T12:35:59.03531+04:00"
