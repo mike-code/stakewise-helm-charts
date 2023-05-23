@@ -86,6 +86,9 @@ graph:
   # -- Additional CLI arguments to pass to Graph Node
   extraArgs: []
 
+  # -- Additional as-is envs passed to the Graph node (may be used for secret refs)
+  extraEnvs: []
+
   # -- Additional container environment variables.
   env:
     # How often to poll Ethereum for new blocks (in ms)

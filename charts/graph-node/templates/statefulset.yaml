@@ -52,12 +52,11 @@ spec:
             - /bin/bash
             - -c
             - |
-              graph-node
+              graph-node \
             {{- if .Values.graph.configTemplate }}
               --config=/config/config.toml
-            {{- end }}
-            {{- range .Values.graph.extraArgs }}
-              {{ . }}
+            {{- else }}
+              {{ range $i, $v := .Values.graph.extraArgs }}{{ if $i }} {{ end }}{{ $v }}{{ end }}
             {{- end }}
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
