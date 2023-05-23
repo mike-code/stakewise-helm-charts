@@ -50,7 +50,9 @@ spec:
         - name: {{ .Chart.Name }}
           command:
             - graph-node
+            {{- if .Values.graph.configTemplate }}
             - --config=/config/config.toml
+            {{- end }}
             {{- with .Values.graph.extraArgs }}
               {{- toYaml (. | default list) | nindent 12 }}
             {{- end }}
