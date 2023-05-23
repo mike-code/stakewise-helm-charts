@@ -49,12 +49,15 @@ spec:
       containers:
         - name: {{ .Chart.Name }}
           command:
-            - graph-node
+            - /bin/bash
+            - -c
+            - |
+              graph-node
             {{- if .Values.graph.configTemplate }}
-            - --config=/config/config.toml
+              --config=/config/config.toml
             {{- end }}
-            {{- with .Values.graph.extraArgs }}
-              {{- toYaml (. | default list) | nindent 12 }}
+            {{- range .Values.graph.extraArgs }}
+              {{ . }}
             {{- end }}
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
