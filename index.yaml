@@ -3,16 +3,42 @@ entries:
   common:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2023-05-23T10:55:34.306475879Z"
+    created: "2023-07-27T00:50:43.298387254Z"
     description: A Library Helm Chart for grouping common logic between stakewise
       charts. This chart is not deployable by itself.
-    digest: 6e1a8a3c45a5eb66eee953714e97d92fb1dae4172bdd047279d40d305eb34d0e
+    digest: 368bfb22c43f62e418d66a3f961db33df655dc7a5ba1b63ffb84ceee9eb39838
     name: common
     type: library
     urls:
     - https://mike-code.github.io/stakewise-helm-charts/common-1.0.0.tgz
     version: 1.0.0
   graph-node:
+  - apiVersion: v2
+    appVersion: v0.30.0
+    created: "2023-07-27T00:50:43.30168351Z"
+    dependencies:
+    - name: common
+      repository: https://mike-code.github.io/stakewise-helm-charts/
+      version: 1.x.x
+    - condition: ipfs.enabled
+      name: ipfs
+      repository: https://mike-code.github.io/stakewise-helm-charts/
+      version: 2.x.x
+    description: Graph Node indexes data from blockchains such as Ethereum and serves
+      it over GraphQL
+    digest: 4acbdb9a39ce88e60f4e1acf9f9e24f656812afa4a40c4df30e1ff45e2c21eb1
+    home: https://thegraph.com/
+    keywords:
+    - graph-node
+    - GraphQL
+    - Ethereum
+    name: graph-node
+    sources:
+    - https://github.com/graphprotocol/graph-node
+    type: application
+    urls:
+    - https://mike-code.github.io/stakewise-helm-charts/graph-node-4.0.3.tgz
+    version: 4.0.3
   - apiVersion: v2
     appVersion: v0.30.0
     created: "2023-05-23T10:55:34.308619059Z"
@@ -120,13 +146,13 @@ entries:
   ipfs:
   - apiVersion: v2
     appVersion: v0.19.1
-    created: "2023-05-23T10:55:34.309596095Z"
+    created: "2023-07-27T00:50:43.302697027Z"
     dependencies:
     - name: common
       repository: https://mike-code.github.io/stakewise-helm-charts/
       version: 1.x.x
     description: IPFS implementation in Go
-    digest: 04deea8cbbb4ff31c829452c7048a72d61e9e330776b34b2a33e257de1da4169
+    digest: e3543e7d635ecd4814da1d5b292e5701bdc237da14d0373c1dc510c186cbfba9
     home: https://ipfs.io
     keywords:
     - ipfs
@@ -138,4 +164,4 @@ entries:
     urls:
     - https://mike-code.github.io/stakewise-helm-charts/ipfs-2.0.1.tgz
     version: 2.0.1
-generated: "2023-05-23T10:55:34.305930958Z"
+generated: "2023-07-27T00:50:43.297978847Z"
