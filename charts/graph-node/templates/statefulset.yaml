@@ -47,7 +47,7 @@ spec:
         {{- print (tpl .Values.initContainers $) | nindent 8 }}
       {{- end }}
       containers:
-        - name: {{ .Chart.Name }}
+        - name: {{ include "common.names.fullname" . }}
           command:
             - /bin/bash
             - -c
