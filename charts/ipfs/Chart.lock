@@ -1,6 +1,6 @@
 dependencies:
 - name: common
-  repository: https://charts.stakewise.io/
+  repository: https://mike-code.github.io/stakewise-helm-charts/
   version: 1.0.0
-digest: sha256:a52d823dcd535c64eafc9df56fe41455c602032e084b8adcaa34e536451d2ab2
-generated: "2023-01-09T12:36:31.102576+04:00"
+digest: sha256:f6ec8c40215355ed49d795b84d9ff2c00d03124422429dbe8dd2cf0cc30a63ac
+generated: "2025-03-17T16:14:18.375717+01:00"
