@@ -3,10 +3,10 @@ entries:
   common:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-03-17T15:15:24.656009527Z"
+    created: "2025-03-17T15:17:36.378980734Z"
     description: A Library Helm Chart for grouping common logic between stakewise
       charts. This chart is not deployable by itself.
-    digest: b04b5f01cb9b5e9de74422f66777a2a8d425addfbef2627ea8728cf967e3ea9f
+    digest: 7a781416c8ea3a55c7fccf57c22b2ed0e368f73296fa2388ea485d273a022a94
     name: common
     type: library
     urls:
@@ -15,7 +15,7 @@ entries:
   graph-node:
   - apiVersion: v2
     appVersion: v0.30.0
-    created: "2025-03-17T15:15:24.657592385Z"
+    created: "2025-03-17T15:17:36.380582316Z"
     dependencies:
     - name: common
       repository: https://mike-code.github.io/stakewise-helm-charts/
@@ -26,7 +26,7 @@ entries:
       version: 2.x.x
     description: Graph Node indexes data from blockchains such as Ethereum and serves
       it over GraphQL
-    digest: 8bd72cf2c729d1c23351f0b9e9ea2d31b2ffdd22ff3dd499ede60a49b5519e98
+    digest: 25d210eedc1bacd4a89c649a17d7e5768367ed273f77cda01ca9fd079c7ba625
     home: https://thegraph.com/
     keywords:
     - graph-node
@@ -172,13 +172,13 @@ entries:
   ipfs:
   - apiVersion: v2
     appVersion: v0.19.1
-    created: "2025-03-17T15:15:24.65833306Z"
+    created: "2025-03-17T15:17:36.381332728Z"
     dependencies:
     - name: common
       repository: https://mike-code.github.io/stakewise-helm-charts/
       version: 1.x.x
     description: IPFS implementation in Go
-    digest: 91127a7eb26d4ed0d899a1a922e6a9eb53206a52fe37820680cf744751245e36
+    digest: 159eac0c954a5b77ddf5b24f1cb5f755e55f59d5ae82ecb3b1d728f9305b0863
     home: https://ipfs.io
     keywords:
     - ipfs
@@ -210,4 +210,4 @@ entries:
     urls:
     - https://mike-code.github.io/stakewise-helm-charts/ipfs-2.0.1.tgz
     version: 2.0.1
-generated: "2025-03-17T15:15:24.655639861Z"
+generated: "2025-03-17T15:17:36.378451906Z"
