@@ -1,9 +1,9 @@
 dependencies:
 - name: common
-  repository: https://charts.stakewise.io/
+  repository: https://mike-code.github.io/stakewise-helm-charts/
   version: 1.0.0
 - name: ipfs
-  repository: https://charts.stakewise.io/
-  version: 2.0.1
-digest: sha256:5f83f5ead4f9a04749ffdb12d9e4c7f70549ff16a964c1f16477f9cc9173442f
-generated: "2023-04-14T14:42:16.882137+04:00"
+  repository: https://mike-code.github.io/stakewise-helm-charts/
+  version: 2.0.2
+digest: sha256:c99bf11711652655aa72f6275cf1dd6d5877cfe011b39896c8e359671101892d
+generated: "2025-03-17T16:16:33.26024+01:00"
