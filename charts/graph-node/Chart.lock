@@ -4,6 +4,6 @@ dependencies:
   version: 1.0.0
 - name: ipfs
   repository: https://mike-code.github.io/stakewise-helm-charts/
-  version: 2.0.2
-digest: sha256:c99bf11711652655aa72f6275cf1dd6d5877cfe011b39896c8e359671101892d
-generated: "2025-03-17T16:16:33.26024+01:00"
+  version: 2.0.3
+digest: sha256:9caf64f4ef6f7e3aa371483ba1acb4d0cab1faa5f1f28dc0e57909caa32147d2
+generated: "2025-04-03T11:39:16.422745+02:00"
