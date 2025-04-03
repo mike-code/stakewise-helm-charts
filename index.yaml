@@ -3,10 +3,10 @@ entries:
   common:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-04-03T09:33:59.542437362Z"
+    created: "2025-04-03T09:34:07.568996337Z"
     description: A Library Helm Chart for grouping common logic between stakewise
       charts. This chart is not deployable by itself.
-    digest: 59ccd67cd990a226e43a3adcafdbb88f63a63ca09581fb7beb43cc77d7a5d91e
+    digest: bae566c3a262104878a9ea2b56b31c78f49814fe0d3530df028734f6552aff82
     name: common
     type: library
     urls:
@@ -15,7 +15,7 @@ entries:
   graph-node:
   - apiVersion: v2
     appVersion: v0.30.0
-    created: "2025-04-03T09:33:59.544722867Z"
+    created: "2025-04-03T09:34:07.571494862Z"
     dependencies:
     - name: common
       repository: https://mike-code.github.io/stakewise-helm-charts/
@@ -26,7 +26,7 @@ entries:
       version: 2.x.x
     description: Graph Node indexes data from blockchains such as Ethereum and serves
       it over GraphQL
-    digest: bd96b001c3b0aa0e7c115bac5ee2fab63bf970704b444cfef51c38f53cdbabfb
+    digest: c25bf5ef5c49cd08e54a042979c077d286cf16416c9ee461881b245f4534d9ba
     home: https://thegraph.com/
     keywords:
     - graph-node
@@ -172,6 +172,26 @@ entries:
   ipfs:
   - apiVersion: v2
     appVersion: v0.19.1
+    created: "2025-04-03T09:34:07.572242335Z"
+    dependencies:
+    - name: common
+      repository: https://mike-code.github.io/stakewise-helm-charts/
+      version: 1.x.x
+    description: IPFS implementation in Go
+    digest: d87df761bd66c46ff76f74b8d47bffba03b343d7901480b33ce7d6e2c739d8ef
+    home: https://ipfs.io
+    keywords:
+    - ipfs
+    - p2p
+    name: ipfs
+    sources:
+    - https://github.com/ipfs/kubo
+    type: application
+    urls:
+    - https://mike-code.github.io/stakewise-helm-charts/ipfs-2.0.3.tgz
+    version: 2.0.3
+  - apiVersion: v2
+    appVersion: v0.19.1
     created: "2025-04-03T09:33:59.545494687Z"
     dependencies:
     - name: common
@@ -210,4 +230,4 @@ entries:
     urls:
     - https://mike-code.github.io/stakewise-helm-charts/ipfs-2.0.1.tgz
     version: 2.0.1
-generated: "2025-04-03T09:33:59.542110993Z"
+generated: "2025-04-03T09:34:07.568683183Z"
